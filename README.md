@@ -1,9 +1,8 @@
-# olist-ecommerce-data-analysis
-End-to-end e-commerce data analysis using Python, MySQL, and Power BI on the Olist Brazilian E-Commerce dataset.
-
 # Olist E-Commerce Data Analysis
 
-###### Project Overview
+End-to-end e-commerce data analysis using Python, MySQL, and Power BI on the Olist Brazilian E-Commerce dataset.
+
+## Project Overview
 
 An end-to-end data analytics project using the Olist Brazilian E-Commerce Public Dataset (2016–2018).
 
@@ -32,7 +31,7 @@ The objective is to analyze order performance, customer behavior, product sales,
 - Created the `olist_ecommerce` database.
 - Imported and validated all 9 datasets.
 - Defined primary keys and foreign key relationships.
-- Practiced business-oriented SQL analysis using:
+- Completed 30 business-focused SQL analysis queries using:
   - JOINs and aggregations
   - GROUP BY and HAVING
   - CTEs and window functions
@@ -58,7 +57,7 @@ The objective is to analyze order performance, customer behavior, product sales,
 - Top 10 Product Categories by Quantity Sold
 - Top 10 Best-Selling Products
 - Customer Distribution by State
-- Payment Method Distribution
+- Payment Value by Payment Method
 
 **Page 3: Delivery & Customer Experience**
 
@@ -67,21 +66,21 @@ The objective is to analyze order performance, customer behavior, product sales,
 - Review Score Distribution
 - Late Delivery Rate by State
 
-Year slicers provide interactive filtering.
+Year slicers provide interactive filtering across the report pages.
 
 ## Key Findings
 
 - The dataset contains 99,441 orders.
 - There are 96,096 unique customers.
 - Total payment value is approximately 16.01 million in the dataset's currency.
-- Approximately 8.11% of eligible delivered orders were delivered later than the estimated date.
+- Approximately 8.11% of delivered orders with both actual and estimated delivery timestamps were delivered late.
 - Average delivery time is approximately 12.50 calendar days.
-- Credit card is the most frequently used payment method by payment value.
+- Credit card accounts for the largest share of total payment value.
 - Review score 5 is the most common review rating.
 
 ## Dataset
 
-Source: Olist Brazilian E-Commerce Public Dataset
+**Source:** Olist Brazilian E-Commerce Public Dataset
 
 The project uses 9 datasets:
 
@@ -100,9 +99,13 @@ The project uses 9 datasets:
 - Payment value is not the same as net revenue or profit.
 - Product sales value is calculated using item price and excludes freight.
 - Review scores are associated with orders, not individual products.
-- Delivery analysis uses the available timestamps and excludes records where required dates are missing.
+- Delivery analysis excludes records where required timestamps are missing.
+- Best-selling products are identified using product IDs because product names are not available in the current dashboard.
+
+## Power BI Dashboard Preview
+
+[View the Olist Power BI Dashboard (PDF)](Olist_Ecommerce_Analysis.pdf)
 
 ## Project Status
 
-Python data preparation, MySQL database setup and SQL analysis, and the three-page Power BI dashboard have been completed.
-
+Python data preparation, MySQL database setup and SQL analysis, and the three-page Power BI dashboard have been completed. Documentation and portfolio presentation are being finalized.
